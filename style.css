@@ -7,9 +7,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .interface {
@@ -62,15 +71,16 @@ header>.interface {
 }
 
 header a {
-    color: #5c5c5c;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
+    font-weight: 500;
 }
 
 header a:hover {
-    color: #fff;
-    transform: scale(1.05);
+    color: rgb(0, 151, 178);
+    transform: scale(1.2);
 }
 
 header nav ul {
@@ -112,7 +122,7 @@ section.topo-do-site .flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-
+    width: 100%;
 }
 
 @keyframes flutuar {
@@ -273,7 +283,8 @@ section.portfolio .flex {
     font-size: smaller;
     text-align: center;
     margin-top: 5px;
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
     flex: 1;
     line-height: 25px;
     font-weight: 400;
@@ -292,4 +303,110 @@ section.portfolio .flex {
     background-color: rgba(0, 0, 0, 0.192) !important;
     border-radius: 20px !important;
     border: 3px solid rgba(0, 0, 0, 0.411) !important;
+}
+
+
+section.experiencias {
+    padding: 40px 4%;
+
+}
+
+
+section.experiencias .flex {
+    gap: 10px;
+}
+
+.experiencias .container {
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    background-color: #181818c1;
+}
+
+.experiencias .container:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 0 20px #ffffff78; */
+}
+
+.flex-colunas{
+    display: flex;
+    flex-direction: column;
+}
+
+.bi-code-square{
+    color: rgb(0, 151, 178);
+    font-size: 3.5rem;
+    padding-left: 10px ;
+    display: flex;
+}
+
+.container-cols{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+.text-box{
+    width: 100%;
+    padding-left: 15px ;
+}
+
+.jobs{
+    color: rgb(0, 151, 178);
+}
+
+.footer{
+    width: 100%;
+    font-size: small;
+    text-align: center;
+    padding: 20px;
+    background-color: #18181877;
+    color:white
+}
+
+@media screen and (max-width: 1200px){
+    /* CLASSES GERAIS */
+
+    .flex{
+        flex-direction: column;
+    }
+    /* CABEÇALHO */
+    .desktop, .btn-contato{
+        display: none;
+    }
+
+    .flex .txt-sobre h2{
+        font-size: 25px;
+    }
+    /* TOPO DO SITE */
+    .txt-sobre h2 {
+        text-align: center;
+    }
+    .txt-sobre p {
+        text-align: center;
+    }
+
+    section.sobre {
+        padding-top: 5px; /* Diminui o padding superior da seção "sobre" */
+    }
+    .img-sobre img {
+        width: 80%; /* Reduz a imagem para 70% da largura original */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    .img-sobre{
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;
+    }
+
+    .logo img{
+        width: 30%; /* Reduz a imagem para 70% da largura original */
+        height: auto; 
+    }
+
+    
+
 }
