@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="menu.js" defer></script>
     <title>Portfólio Samuel</title>
 </head>
@@ -28,8 +28,8 @@
 
             <nav class="desktop">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#habilidades">Especialidades</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                 </ul>
@@ -50,8 +50,8 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#habilidades">Especialidades</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="">Contato</a></li>
@@ -66,7 +66,7 @@
     <main>
 
         <section class="sobre">
-            <div class="interface">
+            <div class="interface" id="inicio">
                 <div class="flex">
                     <div class="img-sobre">
                         <img src="images/samuel2.png" alt="">
@@ -74,16 +74,10 @@
                     <div class="txt-sobre">
                         <h2>
                             MUITO PRAZER, <span>SOU SAMUEL DE MELO! </span> </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                            laboriosam,
-                            nisi ut aliquid ex ea commodi consequatur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore
-                            et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                            laboriosam,
-                            nisi ut aliquid ex ea commodi consequatur </p>
+                        <p>Atualmente cursando Sistemas de Informação, sou formado como Técnico em Desenvolvimento de Sistemas, com 2 anos de experiência em desenvolvimento backend e frontend. E hoje, 
+                            contribuo para o setor de tecnologia no agronegócio impactando mais de 10 mil usuários com minhas tarefas. </p>
+                        <p> Apaixonado por programação e sempre em busca de novas tecnologias, me considero autodidata, proativo e com excelentes habilidades de comunicação, 
+                            racíocinio lógico e trabalho em equipe.</p>
                         <div class="btn-social">
                             <a href="" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
@@ -95,25 +89,41 @@
         </section>
 
         <section class="especialidades">
-            <div class="interface">
-                <h2 class="titulo">MINHAS <span>EXPERIÊNCIAS.</span></h2>
+            <div class="interface" id="habilidades">
+                <h2 class="titulo">MEUS <span>CONHECIMENTOS</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>estou tentando pensar em palavras mas não consigo me expressar</p>
+                        <i class="bx bxl-java"></i>
+                        <h3>Java</h3>
+                        <p>Orientação a Objetos, Polimorfismo, Interfaces e Lambda</p>
                     </div>
-
                     <div class="especialidades-box">
-                        <i class="bi bi-cart"></i>
-                        <h3>Loja online</h3>
-                        <p>estou tentando pensar em palavras mas não consigo me expressar</p>
+                        <i class="bx bxl-spring-boot"></i>
+                        <h3>Spring Boot</h3>
+                        <p>Spring Data JPA, Validation, Spring Security, Spring Web, HATEOAS, Java Mail</p>
                     </div>
-
                     <div class="especialidades-box">
-                        <i class="bi bi-substack"></i>
-                        <h3>Blog</h3>
-                        <p>estou tentando pensar em palavras mas não consigo me expressar</p>
+                        <i class="bx bx-selection"></i>
+                        <h3>Microsserviços</h3>
+                        <p>Spring Cloud Netflix, OpenFeign, Eureka Server</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bx bx-data"></i>
+                        <h3>SQL</h3>
+                        <p>PostgreSQL, MySQL e H2 Database</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bx bx-mail-send"></i>
+                        <h3>RabbitMQ</h3>
+                        <p>Spring for RabbitMQ, Exchange, Binding Key, Routing Key</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bx bxl-angular"></i>
+                        <h3>Angular</h3>
+                        <p>Angular 14 e Angular Material</p>
                     </div>
                 </div>
             </div>
@@ -127,13 +137,13 @@
                         <div class="container-cols">
                             <i class="bi bi-code-square"></i>
                             <div class="text-box">
-                                <small>2024 - <span class="jobs">now</span></small>
-                                <h3>Desenvolvedor de Software - <span>Agrosys Tecnologia</span></h3>
+                                <small>2023 - <span class="jobs">now</span></small>
+                                <h3>Desenvolvedor de Software - <span class="jobs">Agrosys Tecnologia</span></h3>
                                 <p>
-                                    <span>
+                                    <span class="jobs">
                                         Stack:
-                                    </span>
-                                    Java, Spring Boot, Spring Cloud, MySQL, DynamoDB, RDS, ECS, EC2, Docker, SQS,Kafka
+                                    </span >
+                                    Progress4GL, Banco de Dados, Javascript, HTML, CSS
                                 </p>
                             </div>
                         </div>
@@ -142,10 +152,9 @@
                         <div class="container-cols">
                             <i class="bi bi-code-square"></i>
                             <div class="text-box">
-                                <small>2024 - <span class="jobs">now</span></small>
-                                <h3>Desenvolvedor de Software - <span>Agrosys Tecnologia</span></h3>
-                                <p> <span>Stack:</span> Java, Spring Boot, Spring Cloud, MySQL, DynamoDB, RDS, ECS, EC2,
-                                    Docker, SQS,Kafka</p>
+                                <small>2023 - <span class="jobs">2023</span></small>
+                                <h3> Suporte Técnico - <span class="jobs">Thomson Reuters</span></h3>
+                                <p> <span class="jobs">Stack:</span> SQL Server, Excel, Tickets </p>
                             </div>
                         </div>
                     </div>
@@ -153,10 +162,9 @@
                         <div class="container-cols">
                             <i class="bi bi-code-square"></i>
                             <div class="text-box">
-                                <small>2024 - <span class="jobs">now</span></small>
-                                <h3>Desenvolvedor de Software - <span>Agrosys Tecnologia</span></h3>
-                                <p> <span>Stack:</span> Java, Spring Boot, Spring Cloud, MySQL, DynamoDB, RDS, ECS, EC2,
-                                    Docker, SQS,Kafka</p>
+                                <small>2021 - <span class="jobs">2022</span></small>
+                                <h3>Estágio de TI - <span class="jobs">SENAI SC</span></h3>
+                                <p> <span class="jobs">Stack:</span> Arduíno, C++, Robótica, Impressão 3D, Corte à laser</p>
                             </div>
                         </div>
                     </div>
@@ -168,45 +176,41 @@
             <div class="interface" id="projetos">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/imagemteste2.png);">
+                    <div class="img-port" style="background-image: url(images/recursoshumanosimg.PNG);">
                         <div class="overlay">
-                            <span class="title-card">PROJETO 1</span>
+                            <span class="title-card">API Sistema HR</span>
                             <p class="text-cards">
-                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore et dolore magna aliqua
-                                . Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                Projeto de uma Api Rest utilizando o conceito de Microsserviços para uma aplicação de Recursos Humanos podendo realizar pagamentos. 
+                                Foi utilizado tecnologias, como: Spring Cloud, Docker, Netflix Eureka e Spring Data 
                             </p>
-                            <a href="https://github.com/seu-usuario" class="github-link" target="_blank">
+                            <a href="https://github.com/samuel-melo1/system-hr-api" class="github-link" target="_blank">
                                 <span class="bx--link-external"></span>
                             </a>
                         </div>
                     </div>
-                    <div class="img-port" style="background-image: url(images/imagemgit.PNG);">
+                    <div class="img-port" style="background-image: url(images/productpedidoimg.PNG);">
                         <div class="overlay">
-                            <span class="title-card">PROJETO 2</span>
+                            <span class="title-card">Pedido e Produto</span>
                             <p class="text-cards">
-                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore et dolore magna aliqua
-                                . Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                Projeto utilizando a arquitetura de microsserviços com Java/Spring. Ao qual poderá realizar a criação de um produto, criação de um pedido e
+                                remoção de um pedido. 
+                                Fora utilizado tecnologias como: Spring Boot, OpenFeign, Eureka Server, Spring Data Jpa, Gateway e H2 DataBase
                             </p>
-                            <a href="https://github.com/samuel-melo1/SistemaDeBiblioteca" class="github-link"
+                            <a href="https://github.com/samuel-melo1/Order-Product-Microsservice" class="github-link"
                                 target="_blank">
                                 <span class="bx--link-external"></span>
                             </a>
                         </div>
                     </div>
-                    <div class="img-port" style="background-image: url(images/vinicius.jpeg);">
+                    <div class="img-port" style="background-image: url(images/centraldechamadosimg.PNG);">
                         <div class="overlay">
-                            <span class="title-card">PROJETO 3</span>
+                            <span class="title-card">HelpDesk</span>
                             <p class="text-cards">
-                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore et dolore magna aliqua
-                                . Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                Projeto de um sistema de Central de Chamados. Sendo resposável por gerenciar os chamados entre os Técnicos
+                                e os Clientes. Criar, Deletar, Atualizar e Listar os Chamados, Clientes e Técnicos. 
+                                Foi utilizado tecnologias, como: Java/Spring Boot, Spring Data Jpa, DTO, H2 Database, Angular e Angular Material.
                             </p>
-                            <a href="https://github.com/samuel-melo1/SistemaDeBiblioteca" class="github-link"
+                            <a href="https://helpdesk-angular2.vercel.app/login" class="github-link"
                                 target="_blank">
                                 <span class="bx--link-external"></span>
                             </a>
@@ -215,16 +219,14 @@
 
                 </div>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/imagemteste2.png);">
+                    <div class="img-port" style="background-image: url(images/amedigitalimg.PNG);">
                         <div class="overlay">
-                            <span class="title-card">PROJETO 4</span>
+                            <span class="title-card">AmeDigital API Star Wars</span>
                             <p class="text-cards">
-                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore et dolore magna aliqua
-                                . Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                consiste em uma API para o mundo incrivel de Star Wars. A API é responsável por criar os planetas do universo Star Wars 
+                                e inserir as informações, como Nome, Clima e Tempo de cada planeta.
                             </p>
-                            <a href="https://github.com/samuel-melo1/SistemaDeBiblioteca" class="github-link"
+                            <a href="https://github.com/samuel-melo1/BackendAmeDigital" class="github-link"
                                 target="_blank">
                                 <span class="bx--link-external"></span>
                             </a>
@@ -232,12 +234,10 @@
                     </div>
                     <div class="img-port" style="background-image: url(images/imagemgit.PNG);">
                         <div class="overlay">
-                            <span class="title-card">PROJETO 5</span>
+                            <span class="title-card">API Sistema Biblioteca</span>
                             <p class="text-cards">
-                                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                                labore et dolore magna aliqua
-                                . Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit
-                                laboriosam, nisi ut aliquid ex ea commodi consequatur
+                                Sistema de Biblioteca usando Java com Spring Framework, Spring Security e JWT para autenticação, Spring Mail para envio de Email e RabbitMQ. 
+                                É uma aplicação API REST com o objetivo de facilitar o empréstimo e gerenciamente de livros em uma biblioteca.
                             </p>
                             <a href="https://github.com/samuel-melo1/SistemaDeBiblioteca" class="github-link"
                                 target="_blank">
